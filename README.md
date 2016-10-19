@@ -6,7 +6,7 @@ Desktop (>1024px) will take from `data-src`, tablet (768-1024px) will take from 
 
 ## Options
 * `selector` - Which CSS-class to look after
-* `scrollLoad` - If images should be loaded when they are visible on screen
+* `scrollLoad` - If element should be loaded when they are visible on screen
 
 ## Initialize
 
@@ -23,10 +23,15 @@ var lazyload = new Lazyload({
 <img class="lazy" data-src="http://placekitten.com/200/302" data-src-medium="http://placekitten.com/100/152" data-src-small="http://placekitten.com/50/77">
 <div class="lazy" style="width: 700px; height: 700px; background-size: cover;" data-src="http://placekitten.com/200/303" data-src-medium="http://placekitten.com/100/153" data-src-small="http://placekitten.com/50/78"></div>
 <img class="lazy" data-src="http://placekitten.com/200/303" data-src-medium="http://placekitten.com/100/153" data-src-small="http://placekitten.com/50/78">
+<video width="400" height="200" controls class="lazy" poster="http://placekitten.com/100/306">
+  <source src="video.mp4" type="video/mp4">
+</video>
 ```
 
 Example resides in sandbox.
 
 ## Todo
 
-* Add queries to js-init.
+* Setup better breakpoints.
+* Lazyload poster on video-element aswell?
+* CSS for lazy-elements
