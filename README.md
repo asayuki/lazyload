@@ -35,3 +35,4 @@ Example resides in sandbox.
 * Setup better breakpoints.
 * Lazyload poster on video-element aswell?
 * CSS for lazy-elements
+* Lazyload width/height attributes aswell (set them directly when js loads to prevent jumps)
