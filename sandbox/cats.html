@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lazyload</title>
+    <style>
+      img {
+        display: block;
+        margin-bottom: 200px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <img class="lazy" data-src="http://placekitten.com/200/300" data-src-medium="http://placekitten.com/100/150" data-src-small="http://placekitten.com/50/75">
+    <img class="lazy" data-src="http://placekitten.com/250/301" data-src-medium="http://placekitten.com/100/151" data-src-small="http://placekitten.com/50/76">
+    <img class="lazy" data-src="http://placekitten.com/300/302" data-src-medium="http://placekitten.com/100/152" data-src-small="http://placekitten.com/50/77">
+    <img class="lazy" data-src="http://placekitten.com/200/303" data-src-medium="http://placekitten.com/100/153" data-src-small="http://placekitten.com/50/78">
+    <img class="lazy" data-src="http://placekitten.com/500/304" data-src-medium="http://placekitten.com/100/154" data-src-small="http://placekitten.com/50/79">
+    <img class="lazy" data-src="http://placekitten.com/200/305" data-src-medium="http://placekitten.com/100/155" data-src-small="http://placekitten.com/50/80">
+    <img class="lazy" data-src="http://placekitten.com/100/306" data-src-medium="http://placekitten.com/100/156" data-src-small="http://placekitten.com/50/81">
+    <img class="lazy" data-src="http://placekitten.com/280/307" data-src-medium="http://placekitten.com/100/157" data-src-small="http://placekitten.com/50/82">
+    <img class="lazy" data-src="http://placekitten.com/120/308" data-src-medium="http://placekitten.com/100/158" data-src-small="http://placekitten.com/50/83">
+    <img class="lazy" data-src="http://placekitten.com/350/309" data-src-medium="http://placekitten.com/100/159" data-src-small="http://placekitten.com/50/84">
+    <img class="lazy" data-src="http://placekitten.com/200/310" data-src-medium="http://placekitten.com/100/160" data-src-small="http://placekitten.com/50/85">
+
+    <script src="../lazyload.js"></script>
+    <script>
+      var lazyload = new Lazyload({
+        selector: 'lazy',
+        scrollLoad: true
+      });
+    </script>
+  </body>
+</html>
